@@ -1,6 +1,6 @@
-#changelog
+# Changelog
 
-**alle** Änderungen am Discord befinden sich in dieser Datei
+**Alle** Änderungen am Discord befinden sich in dieser Datei
 
 
 ##  15.12.17
