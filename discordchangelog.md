@@ -6,3 +6,7 @@
 ###  15.12.17
 
 - Anpassung der Rechte diverser Rollen
+
+##Geplante Features:
+
+- Einsatz eine 24/7 Musikbots (Umsetzung bis 2018)
