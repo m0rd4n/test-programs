@@ -7,6 +7,6 @@
 
 - Anpassung der Rechte diverser Rollen
 
-##Geplante Features:
+## Geplante Features:
 
 - Einsatz eine 24/7 Musikbots (Umsetzung bis 2018)
