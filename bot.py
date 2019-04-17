@@ -1,4 +1,5 @@
 import discord
+import datetime
 import random
 from discord.ext import commands
 
@@ -13,7 +14,13 @@ async def on_ready():
     print(bot.user.name)
     print(bot.user.id)
     print('------')
-#BETA
+#BETA (muss noch ausgebessert werden)
+@bot.command()
+async def steamsale():
+	"""Countdown bis zum nächsten Steamsale"""
+	tage = (datetime.datetime(2019, 6, 23) - datetime.datetime.now()).days
+	stunden = 24 - datetime.datetime.now().hour
+	await bot.say("Der nächste Steamsale ist in " + tage + " Tagen und " + stunden + " Stunden.")
 @bot.command()
 async def d(a:int, b:int):
 	"""d <Anzahl der Würfe> <höchste Zahl>"""
