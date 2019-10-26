@@ -5,7 +5,7 @@ from discord.ext import commands
 
 TOKEN = 'INSERT_TOKEN'
 
-description = '''Pythontestbot'''
+description = '''Maiqbot'''
 bot = commands.Bot(command_prefix='!', description=description) 
 #Autostart
 @bot.event
@@ -103,3 +103,4 @@ async def quote(ctx):
 	await bot.say(random.choice(variable))
 #ENDE
 bot.run(TOKEN)
+#Test
