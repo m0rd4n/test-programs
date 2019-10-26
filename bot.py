@@ -103,4 +103,3 @@ async def quote(ctx):
 	await bot.say(random.choice(variable))
 #ENDE
 bot.run(TOKEN)
-#Test
