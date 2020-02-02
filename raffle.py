@@ -5,10 +5,10 @@ from random import choice
 items = []
 root = Tk()
 root.title("Raffle")
-root.geometry("208x290")
+root.geometry("245x265")
 
 item = Entry(root)
-item.grid(row=0, column=0, pady=30)
+item.grid(row=0, column=0, pady=10)
 
 
 def add():
@@ -20,10 +20,10 @@ def add():
 
 
 addButton = Button(root, text="add", command=add)
-addButton.grid(row=0, column=1, pady=30)
+addButton.grid(row=0, column=1, pady=10)
 
 item_list = Listbox(root)
-item_list.grid(row=2, column=0, pady=30)
+item_list.grid(row=2, column=0, pady=8)
 
 
 def raffle():
@@ -32,6 +32,19 @@ def raffle():
 
 
 raffleButton = Button(root, text="choose item", command=raffle)
-raffleButton.grid(row=2, column=1, pady=30)
+raffleButton.grid(row=3, column=0, pady=8)
+
+
+def delete():
+    selection = item_list.curselection()
+    pos = 0
+    for i in selection:
+        idx = int(i) - pos
+        item_list.delete(idx, idx)
+        pos = pos + 1
+
+
+delButton = Button(root, text="delete selected item", command=raffle)
+delButton.grid(row=2, column=1, pady=8)
 
 root.mainloop()
