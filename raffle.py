@@ -1,6 +1,7 @@
 from tkinter import *
 from tkinter import messagebox
 from random import choice
+from tkinter.simpledialog import askstring
 
 items = []
 root = Tk()
@@ -42,9 +43,10 @@ def delete():
         idx = int(i) - pos
         item_list.delete(idx, idx)
         pos = pos + 1
+    items.pop(selection[0])
 
 
-delButton = Button(root, text="delete selected item", command=raffle)
+delButton = Button(root, text="delete selected item", command=delete)
 delButton.grid(row=2, column=1, pady=8)
 
 root.mainloop()
