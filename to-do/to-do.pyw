@@ -9,7 +9,7 @@ item.grid(row=0, column=0, pady=10)
 
 
 def init():
-    tasks = open("tasks.txt", 'w+')
+    tasks = open("tasks.txt", 'r')
     content = tasks.readlines()
     if len(content) != 0:
         if ord(content[-1][-1:]) != 10:
