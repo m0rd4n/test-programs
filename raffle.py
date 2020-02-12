@@ -1,7 +1,6 @@
 from tkinter import *
 from tkinter import messagebox
 from random import choice
-from tkinter.simpledialog import askstring
 
 items = []
 root = Tk()
